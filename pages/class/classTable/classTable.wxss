@@ -1,0 +1,77 @@
+/**classTable.wxss**/
+page{
+  background-color: white;
+}
+ .class_top{
+   width: 750rpx;
+   height: 70rpx;
+   border-bottom: 2rpx solid #eee;
+   display: flex;
+   text-align: center;
+ }
+ .title{
+position: absolute;
+width:300rpx;
+left:50%;
+margin-left: -150rpx;
+font-size: 30rpx;
+line-height: 70rpx;
+}
+.add{
+width:70rpx;
+height: 70rpx;
+position: absolute;
+right:20rpx;
+font-size: 50rpx;
+line-height: 70rpx;
+}
+ .flex-item {
+  width: 95rpx;
+  height: 100px;
+}
+
+.kcb-item {
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.smalltext {
+  font-size: 8pt;
+  color: #fff;
+  padding-left: 2px;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  margin-left: 35rpx;
+  background-color: #d2e6b3;
+  color: #7cba23;
+}
+
+.top-text {
+  width: 100rpx;
+  height: 35rpx;
+  font-size: 9pt;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.scroll {
+  height: 1170rpx;
+  z-index: 101;
+  position: fixed;
+}
+
+.left {
+  width: 35rpx;
+  height: 100rpx;
+  font-size: 9pt;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+} 

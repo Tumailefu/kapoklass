@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/class/index/index",
+    "pages/find/find",
+    "pages/mine/mine",
+    "pages/class/classTable/classTable",
+    "pages/class/lesson/lesson",
+    "pages/class/addClass/addClass",
+    "pages/class/news/news"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "木棉课堂",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor":"#000",
+    "list": [
+      {
+        "pagePath": "pages/class/index/index",
+        "text": "课程",
+        "iconPath":"images/lesson.png",
+        "selectedIconPath":"images/lesson_fill.png"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现",
+        "iconPath": "images/find.png",
+        "selectedIconPath": "images/find_fill.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我",
+        "iconPath": "images/people.png",
+        "selectedIconPath": "images/people_fill.png"
+      }
+    ]
+  }
+}
