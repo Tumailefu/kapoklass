@@ -1,0 +1,38 @@
+<!--pages/class/news/news.wxml-->
+<view>
+  <!-- 左侧菜单 -->
+  <view class="list-left-menu">
+    <view wx:for='{{listData}}' wx:key="unique" class="{{index==activeIndex?'list-left-menu-box-selected':'list-left-menu-box-unselected'}}" data-index='{{index}}' bindtap='selectMenu'>
+      <view class='list-menu-name'>{{item.name}}</view>
+    </view>
+  </view>
+  <!-- 右侧菜单 -->
+  <scroll-view scroll-y="true" style='height:1200rpx' bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view class="content" id="a{{index}}" wx:for="{{listData}}" wx:key="unique">
+      <view class='list-tab'>{{item.name}}</view>
+      <view class='content-list' wx:for='{{item.projects}}' wx:key='unique' wx:for-item="items" wx:for-index="indexs">
+        <view class='issue-name'>
+          <view>{{items.title}}
+            <text style='font-size:25rpx' data-type="{{index}}" data-index="{{indexs}}" bindtap='selectInfo'>[详情]</text>
+          </view>
+          <view class='details'>
+            {{items.details}}
+          </view>
+          <view class='submit'>提交情况：{{items.submit}}</view>
+          <view class='Time'>截止：{{items.time}}</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <!-- 选择弹窗 -->
+  <view class='drawer_screen' bindtap='selectInfo'  wx:if='{{showModalStatus}}'> </view>
+  <view class="drawer_box_ad" wx:if="{{showModalStatus}}">
+    <view class='draw_content_ad'>
+      <view style='font-size:16px;display:flex;justify-content:center;'>{{listData[currentType].projects[currentIndex].title}}
+      </view>
+      <view class='select-line-nav"'> {{listData[currentType].projects[currentIndex].details}} </view>
+
+    </view>
+  </view>
+</view>

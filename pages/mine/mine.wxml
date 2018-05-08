@@ -1,0 +1,39 @@
+<!--mine.wxml-->
+<view class="container">
+
+  <view class="userinfo" bindtap="login">
+    <image class="userinfo-avatar" src="{{logged ? userInfo.avatarUrl : '../../images/user-unlogin.png'}}" background-size="cover"></image>
+    <view>
+      <text class="userinfo-nickname">{{logged ? userInfo.nickName : '点击登录'}}</text>
+      <text class="userinfo-nickname" wx:if="{{logged}}">{{userInfo.lastLoginTime}}</text>
+    </view>
+  </view>
+  
+  <view catchtap="setting" class="user-settings userstyle">
+    <text class="userTextStyle">设置</text>
+    <text class="righthead"></text>
+  </view>
+
+  <view class="user-commonProblem userstyle">
+    <text class="userTextStyle">常见问题</text>
+    <text class="righthead"></text>
+  </view>
+
+  <view class="user-termsOfUse userstyle">
+    <text class="userTextStyle">使用条款</text>
+    <text class="righthead"></text>
+  </view>
+
+  <view class="user-privacyPolicy userstyle">
+    <text class="userTextStyle">隐私权政策</text>
+    <text class="righthead"></text>
+  </view>
+
+  <!-- 弹窗 -->
+  <!-- <modal title="温馨提示：" confirm-text="立即加入" cancel-text="以后再说"
+   hidden="{{modalHidden}}" bindconfirm="confirmChange" bindcancel="cancellChange" >
+  您还未注册麦享会会员,请先注册。
+  </modal> -->
+
+
+</view>

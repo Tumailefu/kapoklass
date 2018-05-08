@@ -1,0 +1,70 @@
+/**index.wxss**/
+
+/* 课程动态 */
+.class_now{
+  width: 750rpx;
+  height: 1050rpx;
+}
+/* 顶部 */
+.todayClass{
+  background-color: white;
+  border-bottom: 2rpx solid #eee;
+  margin-top:24rpx;
+  height: 60rpx;
+  position: relative;
+}
+.todayClass_right{
+  line-height: 60rpx;
+  font-size: 20rpx;
+  color: #ccc;
+  letter-spacing: 2rpx;
+  position: absolute;
+  right: 0;
+}
+.todayClass_left{
+position: absolute;
+left: 0;
+}
+.navigator-hover{
+  color: blue;
+}
+/* 课程item */
+.class_item{
+  background-color: white;
+  border-bottom: 2rpx solid #eee;
+  height: 150rpx;
+  display: flex;
+}
+.class_time{
+  display: inline-block;
+  width: 120rpx;
+  height: 120rpx;
+  background-color: skyblue;
+  border-radius: 25rpx;
+  margin: 16rpx;
+  line-height: 120rpx;
+}
+.info{
+  height: 150rpx;
+  width: 240rpx;
+  margin-left: 15rpx;
+  display: inline-block;
+  position: relative;
+}
+.info_list1{
+  font-size: 30rpx;
+  position: absolute;
+  left: 0;top:15rpx;
+}
+.info_list2{
+  font-size: 20rpx;
+  color: #ccc;
+  position: absolute;
+  left: 0;top:65rpx;
+}
+.info_list3{
+  font-size: 20rpx;
+  color: #ccc;
+  position: absolute;
+  left: 0;top:100rpx;
+}
