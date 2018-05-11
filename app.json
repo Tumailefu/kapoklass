@@ -9,7 +9,7 @@
     "pages/class/addClass/addClass",
     "pages/login/login",
     "pages/class/news/news"
-    
+    // 
   ],
   "window":{
     "backgroundTextStyle":"light",
